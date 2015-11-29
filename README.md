@@ -46,13 +46,14 @@ of death. In those cases ties should be broken by using the hospital name. For e
 the hospitals with lowest 30-day mortality rate for heart failure are shown here.
 
 > head(texas)
-Hospital.Name Rate Rank
-3935 FORT DUNCAN MEDICAL CENTER 8.1 1
-4085 TOMBALL REGIONAL MEDICAL CENTER 8.5 2
-4103 CYPRESS FAIRBANKS MEDICAL CENTER 8.7 3
-3954 DETAR HOSPITAL NAVARRO 8.7 4
-4010 METHODIST HOSPITAL,THE 8.8 5
-3962 MISSION REGIONAL MEDICAL CENTER 8.8 6
+>Hospital.Name Rate Rank
+>3935 FORT DUNCAN MEDICAL CENTER 8.1 1
+>4085 TOMBALL REGIONAL MEDICAL CENTER 8.5 2
+>4103 CYPRESS FAIRBANKS MEDICAL CENTER 8.7 3
+>3954 DETAR HOSPITAL NAVARRO 8.7 4
+>4010 METHODIST HOSPITAL,THE 8.8 5
+>3962 MISSION REGIONAL MEDICAL CENTER 8.8 6
+
 Note that Cypress Fairbanks Medical Center and Detar Hospital Navarro both have the same 30-day rate
 (8.7). However, because Cypress comes before Detar alphabetically, Cypress is ranked number 3 in this
 scheme and Detar is ranked number 4. One can use the order function to sort multiple vectors in this
@@ -60,12 +61,12 @@ manner (i.e. where one vector is used to break ties in another vector).
 
 The function should use the following template.
 
-rankhospital <- function(state, outcome, num = "best") {
-'## Read outcome data
-## Check that state and outcome are valid
-## Return hospital name in that state with the given rank
-## 30-day death rate
-}'
+>rankhospital <- function(state, outcome, num = "best") {
+>## Read outcome data
+>## Check that state and outcome are valid
+>## Return hospital name in that state with the given rank
+>## 30-day death rate
+>}
 
 The function should check the validity of its arguments. If an invalid state value is passed to best, the
 function should throw an error via the stop function with the exact message “invalid state”. If an invalid
