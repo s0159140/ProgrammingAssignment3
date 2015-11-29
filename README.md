@@ -62,10 +62,10 @@ manner (i.e. where one vector is used to break ties in another vector).
 The function should use the following template.
 
 >rankhospital <- function(state, outcome, num = "best") {
->## Read outcome data
->## Check that state and outcome are valid
->## Return hospital name in that state with the given rank
->## 30-day death rate
+>'## Read outcome data
+>'## Check that state and outcome are valid
+>'## Return hospital name in that state with the given rank
+>'## 30-day death rate
 >}
 
 The function should check the validity of its arguments. If an invalid state value is passed to best, the
