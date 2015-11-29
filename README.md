@@ -46,7 +46,9 @@ of death. In those cases ties should be broken by using the hospital name. For e
 the hospitals with lowest 30-day mortality rate for heart failure are shown here.
 
 > head(texas)
->Hospital.Name Rate Rank
+
+> Hospital.Name Rate Rank
+
 >3935 FORT DUNCAN MEDICAL CENTER 8.1 1
 
 >4085 TOMBALL REGIONAL MEDICAL CENTER 8.5 2
